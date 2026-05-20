@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ngemil Yuk!</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #a85e32;
+      font-family: poppins;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .card {
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card {
+      text-align: center;
+    }
+
+    .btn-buy {
+      background-color: #a85e32;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .card {
+  border-radius: 20px;
+  transition: 0.3s;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    .btn-buy:hover {
+      background-color: #a85e32;
+    }
+    .container {
+  max-width: 1100px;
+}
+  </style>
+</head>
+
+  <style>
+    body {
+      background-color: #a85e32;
+    }
+    .hero {
+      background-image: url('Ngemil, Yuk!.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 270px 40px;
+      text-align: center;
+    }
+    .card {
+      border-radius: 15px;
+    }
+   .btn-checkout {
+  background-color: #a85e32;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-checkout:hover {
+  background-color: #a85e32;
+}
+  body {
+  background: linear-gradient(135deg, #a85e32, #a85e32);
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.contact-box {
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+#kontak {
+  scroll-margin-top: 80px;
+}
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+#makanan {
+  color: white;
+}
+#minuman {
+  color: white;
+}
+.text-center p {
+  color: white;
+}
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #a85e32;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ngemil, Yuk!</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#makanan">🍟 Makanan</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="#minuman">🥤 Minuman</a>
+  </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="#kontak">📞 Kontak</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <!-- 🎥 VIDEO BACKGROUND -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="video dimsum.mp4" type="video/mp4">
+  </video>
+
+  <!-- overlay biar teks kebaca -->
+  <div class="overlay"></div>
+
+  <!-- isi -->
+  <div class="hero-content">
+    <h1>Ngemil, Yuk!</h1>
+    <p>Perut puas, harga pas😋</p>
+  </div>
+
+</div>
+</div>
+
+<!-- Menu -->
+    <div class="col-md-2">
+      <!-- semua menu kamu tetap di sini -->
+    </div>
+    <!-- 🔍 SEARCH (TARUH DI SINI) -->
+<div class="container my-4">
+  <input type="text" id="search" class="form-control" placeholder="Cari menu...">
+</div>
+
+  <!-- MAKANAN -->
+  <h2 id="makanan" class="mb-4">🍟 Makanan</h2>
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="cireng.jpg">
+        <h5>Cireng Isi (6 pcs)</h5>
+        <p>Rp15.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Cireng Isi', 15000)">Beli</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="rujak.jpg">
+        <h5>Cireng Rujak</h5>
+        <p>Rp15.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Cireng Rujak', 15000)">Beli</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="cimol.jpg">
+        <h5>Cimol Chili Oil</h5>
+        <p>Rp15.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Cimol Chili Oil', 15000)">Beli</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="Fullmoon Egg.jpg">
+        <h5>Dimsum Chili Oil</h5>
+        <p>Rp15.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Dimsum Chili Oil', 15000)">Beli</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3">
+        <img src="milkbun.jpg">
+        <<h5>Milkbun</h5>
+
+<select id="milkbun-rasa" class="form-select mb-2">
+  <option value="Vanilla">Vanilla</option>
+  <option value="Coklat">Coklat</option>
+  <option value="Strawberry">Strawberry</option>
+</select>
+
+<p>Rp20.000</p>
+
+<button class="btn btn-buy" onclick="addMilkbun()">Beli</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="cookie.jpg">
+        <h5>Soft Cookies</h5>
+        <p>Rp20.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Soft Cookies', 20000)">Beli</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MINUMAN -->
+  <h2 id="minuman" class="mt-5 mb-4">🥤 Minuman</h2>
+  <div class="row g-4">
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="matcha.jpg">
+        <h5>Matcha Milk</h5>
+        <p>Rp15.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Matcha Milk', 15000)">Beli</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="bobba.jpg">
+        <h5>Bubble Milk Tea</h5>
+        <p>Rp15.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Bubble Milk Tea', 15000)">Beli</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="thai.jpg">
+        <h5>Thai Milk Tea</h5>
+        <p>Rp15.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Thai Milk Tea', 15000)">Beli</button>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-4">
+        <img src="cnc.jpg">
+        <h5>Ice Cookies n Cream</h5>
+        <p>Rp15.000</p>
+        <button class="btn btn-buy" onclick="addToCart('Ice Cookies n Cream', 15000)">Beli</button>
+      </div>
+    </div>
+
+    <div class="container mt-5 text-center" style="max-width: 900px;">
+  <div class="row">
+
+    <!-- KERANJANG -->
+    <div class="container mt-5 text-center">
+
+  <div class="card p-4 mx-auto" style="max-width: 350px;">
+    <h4>🛒 Keranjang</h4>
+    <hr>
+
+    <ul id="cart-list" class="list-group mb-3"></ul>
+
+    <h5>Total: Rp <span id="total">0</span></h5>
+
+    <button class="btn btn-buy w-100" onclick="checkout()">Checkout</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<hr>
+
+<!-- KONTAK -->
+<div id="kontak" class="container mt-5">
+  <div class="card p-4 mx-auto contact-box" style="max-width:600px;">
+    <h5 class="text-center mb-3">📞 Kontak</h5>
+
+    <p class="mb-2">📱 WhatsApp: 
+      <a href="https://wa.me/6285119526903" target="_blank">085119526903</a>
+    </p>
+
+    <p class="mb-2">📷 Instagram: @ngemilyuk</p>
+    <p class="mb-0">📧 Email: ngemil@yuk.com</p>
+  </div>
+</div>
+
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="text-center mt-5 mb-3">
+  <p>© 2026 Ngemil Yuk!</p>
+</div>
+
+<script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.getElementById("search").addEventListener("keyup", function(){
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    let text = card.innerText.toLowerCase();
+    card.parentElement.style.display = text.includes(value) ? "block" : "none";
+  });
+});</script>
+<script>
+  function addMilkbun() {
+  let rasa = document.getElementById("milkbun-rasa").value;
+  let nama = "Milkbun (" + rasa + ")";
+  let harga = 20000;
+
+  addToCart(nama, harga);
+}
+  feather.replace();
+</script>
+
+<script>
+let cart = [];
+let total = 0;
+
+function addToCart(nama, harga) {
+  cart.push({nama, harga});
+  total += harga;
+  renderCart();
+}
+
+function renderCart() {
+  let list = document.getElementById("cart-list");
+  list.innerHTML = "";
+
+  cart.forEach((item, index) => {
+    let li = document.createElement("li");
+    li.className = "list-group-item d-flex justify-content-between";
+
+    li.innerHTML = `
+      ${item.nama} - Rp ${item.harga}
+      <button class="btn btn-sm btn-danger" onclick="removeItem(${index})">X</button>
+    `;
+
+    list.appendChild(li);
+  });
+
+  document.getElementById("total").innerText = total;
+}
+
+function removeItem(index){
+  total -= cart[index].harga;
+  cart.splice(index,1);
+  renderCart();
+}
+
+function checkout() {
+  if(cart.length === 0){
+    alert("Keranjang kosong 😢");
+  } else {
+    let modal = new bootstrap.Modal(document.getElementById('checkoutModal'));
+    modal.show();
+  }
+}
+
+function processCheckout() {
+  let method = document.getElementById("paymentMethod").value;
+
+  if(method === ""){
+    alert("Pilih metode pembayaran dulu!");
+    return;
+  }
+
+  alert("Pembayaran via " + method + " berhasil! 🎉\nTotal: Rp " + total);
+
+  cart = [];
+  total = 0;
+  renderCart();
+
+  let modal = bootstrap.Modal.getInstance(document.getElementById('checkoutModal'));
+  modal.hide();
+}
+</script>
+
+<!-- Modal Checkout -->
+<div class="modal fade" id="checkoutModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">💳 Pilih Metode Pembayaran</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <select id="paymentMethod" class="form-select">
+  <option value="">-- Pilih Metode --</option>
+  <option value="BCA">🏦 Transfer BCA</option>
+  <option value="QRIS">📱 QRIS</option>
+  <option value="COD">💵 COD</option>
+</select>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-success" onclick="processCheckout()">Bayar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
